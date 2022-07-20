@@ -5,6 +5,13 @@
 			"style": {
 				"navigationBarTitleText": "uni-app"
 			}
+		},
+		{
+			"path": "pages/watch/watch",
+			"style": {
+				"navigationBarTitleText": "追剧",
+				"enablePullDownRefresh": false
+			}
 		}
 	],
 	"globalStyle": {
@@ -12,5 +19,24 @@
 		"navigationBarTitleText": "uni-app",
 		"navigationBarBackgroundColor": "#F8F8F8",
 		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"color": "#7A7E83",
+		"selectedColor": "#3cc51f",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"list": [
+		{
+			"pagePath": "pages/index/index",
+			"iconPath": "static/c1.png",
+			"selectedIconPath": "static/logo.png",
+			"text": "菜单1"
+		}, 
+		{
+			"pagePath": "pages/watch/watch",
+			"iconPath": "static/c2.png",
+			"selectedIconPath": "static/logo.png",
+			"text": "菜单22222"
+		}]
 	}
 }
