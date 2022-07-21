@@ -1,7 +1,12 @@
 <script>
+	import System from '@/util/system'
 	export default {
 		onLaunch: function() {
 			console.log('App Launch')
+			// 设备信息存入缓存
+			uni.setStorageSync('systemInfo', System.systemInfo())
+			uni.setStorageSync('uniPlatform', System.uniPlatform())
+			uni.setStorageSync('isApple', System.isApple())
 		},
 		onShow: function() {
 			console.log('App Show')
