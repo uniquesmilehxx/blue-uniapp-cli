@@ -1,8 +1,13 @@
 <template>
-	<view class="content">
-		<image class="logo" src="/static/logo.png"></image>
-		<view>
-			<text class="title">{{title}}</text>
+	<view class="page bg-light" :style="{ paddingTop: PaddingTop + 'px'}">
+		<navbar
+			title="首页"
+			:leftIconSize="0"
+			:autoBack="false"
+		>
+		</navbar>
+		<view class="page-content">
+			
 		</view>
 	</view>
 </template>
@@ -11,14 +16,19 @@
 	export default {
 		data() {
 			return {
-				title: 'Hello'
+				// 页面的padding-top值
+				PaddingTop: this.PaddingTop
 			}
 		},
 		onLoad() {
 			
 		},
 		methods: {
-
+			handleJump () {
+				uni.navigateTo({
+					url: '/pages/content/content'
+				})
+			}
 		}
 	}
 </script>

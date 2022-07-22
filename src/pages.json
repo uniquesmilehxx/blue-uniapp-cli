@@ -12,9 +12,19 @@
 				"navigationBarTitleText": "追剧",
 				"enablePullDownRefresh": false
 			}
-		}
-	],
+		},
+        {
+            "path" : "pages/content/content",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
 	"globalStyle": {
+		"navigationStyle": "custom",
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "uni-app",
 		"navigationBarBackgroundColor": "#F8F8F8",

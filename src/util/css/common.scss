@@ -1,0 +1,21 @@
+@import './variables.scss';
+
+page {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	overflow: hidden;
+}
+.page-content {
+	overflow: scroll;
+}
+// 浅色背景
+.bg-light {
+	background-image: $bg-gradient-1;
+	height: 100%;
+}
+// 深色背景
+.bg-dark {
+	background-image: $bg-gradient-2;
+	height: 100%;
+}

@@ -1,6 +1,6 @@
 {
-    "name" : "",
-    "appid" : "",
+    "name" : "blue-uniapp-cli",
+    "appid" : "__UNI__B700969",
     "description" : "",
     "versionName" : "1.0.0",
     "versionCode" : "100",
@@ -80,5 +80,17 @@
     },
     "mp-qq" : {
         "usingComponents" : true
+    },
+    "h5" : {
+        "router" : {
+            "mode" : "history"
+        }
+    },
+    "quickapp-webview" : {
+        "icon" : "C:/Users/Netjoy/Pictures/creator-index-pipei.png",
+        "package" : "quick",
+        "minPlatformVersion" : 1070,
+        "versionName" : "1.0",
+        "versionCode" : 100
     }
 }

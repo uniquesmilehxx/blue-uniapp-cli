@@ -1,14 +1,23 @@
 <template>
-	<view class="test-scss">
-		<view class="">
-			u-view上传组件测试
+	<view class="page bg-dark" :style="{ paddingTop: PaddingTop + 'px'}">
+		<navbar
+			title="追剧"
+			:leftIconSize="0"
+			:autoBack="false"
+		>
+		</navbar>
+		<view class="page-content" :style="{ height:'calc(100vh - ' + PaddingTop + 'rpx)' }">
+			<view class="test-scss">
+				u-view上传组件测试
+			</view>
+			<u-upload
+				:fileList="fileList"
+				multiple
+				name="1"
+				@afterRead="afterRead"
+			></u-upload>
+			<view v-for="item in 100" :key="item">{{ item }}</view>
 		</view>
-		<u-upload
-			:fileList="fileList"
-			multiple
-			name="1"
-			@afterRead="afterRead"
-		></u-upload>
 	</view>
 </template>
 
@@ -17,6 +26,8 @@
 	export default {
 		data() {
 			return {
+				// 页面的padding-top值
+				PaddingTop: this.PaddingTop,
 				fileList: [],
 			}
 		},
