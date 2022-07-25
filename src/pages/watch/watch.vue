@@ -6,7 +6,7 @@
 			:autoBack="false"
 		>
 		</navbar>
-		<view class="page-content" :style="{ height:'calc(100vh - ' + PaddingTop + 'px)' }">
+		<view class="page-content" :style="{ height:'calc(100vh - ' + (PaddingTop + TabbarHeight) + 'px)' }">
 			<view class="test-scss">
 				u-view上传组件测试
 			</view>
@@ -28,6 +28,8 @@
 			return {
 				// 页面的padding-top值
 				PaddingTop: this.PaddingTop,
+				// 一级页面的TabbarHeight值（一级页面内容高度需要减去这部分）
+				TabbarHeight: this.TabbarHeight,
 				fileList: [],
 			}
 		},

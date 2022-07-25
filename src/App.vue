@@ -5,6 +5,7 @@
 		onLaunch: function() {
 			console.log('App Launch')
 			this.setPagePaddingTop()
+			this.calcTabbarHeight()
 		},
 		onShow: function() {
 			console.log('App Show')
@@ -36,7 +37,17 @@
 				// 放在prototype中，在vue实例中中可通过this指针访问（无法在模板中直接读取）
 				Vue.prototype.PaddingTop = statusBarHeight + narBarHeight
 				console.log('screenHeight', System.systemInfo.screenHeight, System.systemInfo.windowHeight)
-			}
+			},
+			// 计算一级页面底部tabbar的占位高度（原生tabbar，在小程序中不占位）(一级页面内容高度需要减去这部分)
+			calcTabbarHeight () {
+				// uniPlatform
+				const uniPlatform = System.uniPlatform
+				let height = 0
+				if (uniPlatform.includes('web')) {
+					height = 50
+				}
+				Vue.prototype.TabbarHeight = height
+			},
 		}
 	}
 </script>
