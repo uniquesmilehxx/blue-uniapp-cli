@@ -35,6 +35,7 @@
 				}
 				// 放在prototype中，在vue实例中中可通过this指针访问（无法在模板中直接读取）
 				Vue.prototype.PaddingTop = statusBarHeight + narBarHeight
+				console.log('screenHeight', System.systemInfo.screenHeight, System.systemInfo.windowHeight)
 			}
 		}
 	}

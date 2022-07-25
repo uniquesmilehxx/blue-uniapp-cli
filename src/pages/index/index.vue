@@ -6,8 +6,8 @@
 			:autoBack="false"
 		>
 		</navbar>
-		<view class="page-content">
-			
+		<view class="page-content" :style="{ height:'calc(100vh - ' + PaddingTop + 'px)' }">
+			<button @click="handleJump">点击跳转二级页面</button>
 		</view>
 	</view>
 </template>

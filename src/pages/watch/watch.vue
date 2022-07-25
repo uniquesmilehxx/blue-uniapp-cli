@@ -6,7 +6,7 @@
 			:autoBack="false"
 		>
 		</navbar>
-		<view class="page-content" :style="{ height:'calc(100vh - ' + PaddingTop + 'rpx)' }">
+		<view class="page-content" :style="{ height:'calc(100vh - ' + PaddingTop + 'px)' }">
 			<view class="test-scss">
 				u-view上传组件测试
 			</view>

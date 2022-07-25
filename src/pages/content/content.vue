@@ -4,7 +4,9 @@
 			title="二级页面"
 		>
 		</navbar>
-		<view class="page-content">222</view>
+		<view class="page-content" :style="{ height:'calc(100vh - ' + PaddingTop + 'px)' }">
+			<view v-for="item in 100" :key="item">{{ item }}</view>
+		</view>
 	</view>
 </template>
 
