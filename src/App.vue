@@ -3,9 +3,18 @@
 	import System from '@/util/system'
 	export default {
 		onLaunch: function() {
-			console.log('App Launch')
+			console.log('App Launch', uni.getSystemInfoSync().uniPlatform)
 			this.setPagePaddingTop()
 			this.calcTabbarHeight()
+			// #ifdef MP
+			console.log('------------------MP')
+			// #endif
+			// #ifdef MP-WEIXIN
+			console.log('------------------MP-WEIXIN')
+			// #endif
+			// #ifdef MP-DINGTALK
+			console.log('------------------MP-DINGTALK')
+			// #endif
 		},
 		onShow: function() {
 			console.log('App Show')
